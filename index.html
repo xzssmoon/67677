@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Для Веры 🌸</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="petals" id="petals"></div>
+
+<div class="top-left-btn">
+    <button class="neon-btn" onclick="showMessage('Ты самая красивая 💘', event)">Ты самая красивая 💘</button>
+    <div class="click-hint">⬆ Нажми</div>
+</div>
+
+<div class="top-right-btn">
+    <button class="neon-btn" onclick="showMessage('Ты самая лучшая 💝', event)">Ты самая лучшая 💝</button>
+    <div class="click-hint">⬆ Нажми</div>
+</div>
+
+<div class="popup-message" id="popupMessage"></div>
+
+<div class="container">
+
+    <!-- СТРАНИЦА 1 -->
+    <div class="card active" id="page1">
+        <div class="photo-wrap">
+            <img src="https://i.ibb.co/gbdbFdFn/IMG-20260927-121127-932.jpg" alt="Вера" class="vera-photo">
+        </div>
+
+        <h1>Для Веры 🌸</h1>
+        <p class="subtitle">самой нежной и любимой</p>
+
+        <div class="heart">💖</div>
+
+        <p class="message">
+            Вера, ты моё самое тёплое чувство.<br>
+            Каждый день с тобой как первый рассвет,<br>
+            каждый взгляд это новая причина улыбаться.
+        </p>
+
+        <div class="roses-row">
+            <span>🌸</span><span>💖</span><span>🌸</span>
+        </div>
+
+        <p class="signature">
+            С любовью я пишу тебе это 💕
+        </p>
+
+        <button class="btn" onclick="nextPage(2)">Дальше →</button>
+    </div>
+
+    <!-- СТРАНИЦА 2 -->
+    <div class="card" id="page2">
+        <h1>Ты чудо ✨</h1>
+
+        <div class="heart">🌸</div>
+
+        <p class="message">
+            Твои глаза как звёзды,<br>
+            твоя улыбка как солнце,<br>
+            твой голос моя любимая песня.
+        </p>
+
+        <p class="message">
+            Ты красива не только снаружи,<br>
+            но и глубоко внутри:<br>
+            в каждом слове, в каждом поступке.
+        </p>
+
+        <div class="roses-row">
+            <span>🌷</span><span>💐</span><span>🌷</span>
+        </div>
+
+        <button class="btn" onclick="nextPage(3)">Дальше →</button>
+    </div>
+
+    <!-- СТРАНИЦА 3 -->
+    <div class="card" id="page3">
+        <h1>Моё счастье 💗</h1>
+
+        <div class="heart">💗</div>
+
+        <p class="message">
+            С тобой я становлюсь лучше.<br>
+            С тобой каждый день особенный.<br>
+            С тобой хочется жить, мечтать и любить.
+        </p>
+
+        <p class="message">
+            Спасибо, что ты рядом.<br>
+            Спасибо за каждое утро,<br>
+            за каждую улыбку, за тепло твоих рук.
+        </p>
+
+        <div class="roses-row">
+            <span>🌸</span><span>💖</span><span>🌸</span>
+        </div>
+
+        <button class="btn" onclick="nextPage(4)">Дальше →</button>
+    </div>
+
+    <!-- СТРАНИЦА 4 -->
+    <div class="card final" id="page4">
+        <h1>Я люблю тебя 💖</h1>
+
+        <div class="heart-big">❤️</div>
+
+        <p class="message big">
+            Вера, ты самое главное,<br>
+            что у меня есть.
+        </p>
+
+        <p class="message">
+            Я очень сильно тебя люблю.<br>
+            Ты моя нежность,<br>
+            моё счастье, моя вселенная.
+        </p>
+
+        <div class="roses-row">
+            <span>🌸</span><span>💕</span><span>🌸</span>
+        </div>
+
+        <p class="signature big">
+            От Славы 💌
+        </p>
+
+        <button class="btn back" onclick="nextPage(1)">↺ Назад</button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
